@@ -1,0 +1,38 @@
+[
+    {
+      "name": "West Side Inn",
+      "description": "Here is some Info on the West Side Inn",
+      "starRating": 5,
+      "facilities": ["Pool"]
+    },
+    {
+      "name": "Party Hotel",
+      "description": "Here is some Info on the Party Hotel",
+      "starRating": 3,
+      "facilities": ["Car Park", "Gym"]
+    },
+    {
+      "name": "Grand Hotel",
+      "description": "Here is some Info on the Grand Hotel",
+      "starRating": 3,
+      "facilities": ["Shower", "WIFI"]
+    },
+    {
+      "name": "Castle Hotel",
+      "description": "Here is some Info on the Castle Hotel",
+      "starRating": 5,
+      "facilities": ["Shower", "TV"]
+    },
+    {
+      "name": "Hotel Amsterdam",
+      "description": "Here is some Info on the Hotel Amsterdam",
+      "starRating": 5,
+      "facilities": ["TV", "WIFI"]
+    },
+    {
+      "name": "London Hotel",
+      "description": "Here is some Info on the London Hotel",
+      "starRating": 1,
+      "facilities": ["TV", "Non Smoking"]
+    }
+  ]

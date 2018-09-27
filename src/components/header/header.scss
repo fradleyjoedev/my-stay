@@ -1,0 +1,15 @@
+@import '../styles/palette';
+
+.header {
+    font-size: 20px;
+    width: 100%;
+    background: $color-grey;
+    color: $color-white;
+    height: 70px;
+    padding: 10px;
+    
+    h1 {
+        font-family: 'Noticia Text', serif;
+        font-size: 36px;
+    }
+}

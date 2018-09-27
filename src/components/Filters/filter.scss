@@ -1,0 +1,77 @@
+@import '../styles/palette';
+
+.filter {
+    margin-top: 15px;
+    border: 1px solid $color-orange;
+    border-radius: 6px;
+    color: $color-black;
+
+    h2 {     
+        background-color: $color-orange;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 8px;
+    }
+
+    &__top {
+        margin-top: 15px;
+        border: 1px solid $color-orange;
+        border-radius: 5px;
+        border-top: 5px solid $color-orange;
+        padding: 5px;
+        margin-bottom: 10px;
+
+        a {
+            width: 50%;
+            display: inline-block;
+            text-align: center;
+            color: $color-dimgrey;
+            cursor: pointer;
+
+            &:first-of-type {
+                border-right: 1px solid;
+            }
+        }
+    }
+
+    &-reset {
+        margin-top: 12px;
+        background-color: $color-grey;
+        color: $color-white;
+        border-radius: 3px;
+        padding: 5px;
+        margin-bottom: 0px;
+        transition: ease 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-orange;
+            color: $color-black;
+        }
+    }
+
+    &__section {
+        padding-left: 8px;
+        padding-bottom: 15px;
+        padding-right: 8px;
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        &-item {
+            padding: 5px;
+            color: $color-dimgrey;
+            width: 100%;
+            display: inline-block;
+            cursor: pointer;
+
+            &:hover, &-selected {
+                background: $color-lightgrey;
+                color: $color-black;          
+            }       
+        }
+    }
+}
