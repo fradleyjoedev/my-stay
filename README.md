@@ -11,7 +11,7 @@ The following is a list of the technologies in use in this project. Versions are
 
 ## Build
 
-In the root directory run the following commands:
+In the root directory run the following commands in a command line of your choice:
 * npm install
 * npm start
 > Go to [localhost:8080](http://localhost:8080/) in your browser to run the site
