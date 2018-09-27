@@ -6,6 +6,10 @@ export const FILTER_SET = 'FILTER_SET';
 export const FILTER_DATA_SET = 'FILTER_DATA_SET';
 export const SORTING_DATA_SET = 'SORTING_DATA_SET';
 
+/**
+ * Function used for adding the hotel data into the store
+ * @returns dispatch passing data to the reducer
+ */
 export function storeHotelData(){
     return dispatch => {
         axios.get('../src/data/data.json')
@@ -27,6 +31,11 @@ export function storeHotelData(){
     }  
 }
 
+/**
+ * Function used for getting and ordering the right data for the filters
+ * @param data hotel data from the data.json
+ * @returns dispatch passing data to the reducer
+ */
 function storeFilter(data){
     let name = [];
     let starRating = [];
@@ -71,6 +80,14 @@ function storeFilter(data){
 	} 
 }
 
+/**
+ * Function used to filter the data based on the filter choosen
+ * @param data hotel data from the data.json
+ * @param selectedFilters current filters choosen (could be none)
+ * @param filterName key name of the filter being serched on
+ * @param filterValue the value that it needs to be filtered by
+ * @returns dispatch passing data to the reducer
+ */
 export function filterList(data, selectedFilters, filterName, filterValue){
     selectedFilters.push({[filterName]: filterValue});
 
@@ -107,6 +124,11 @@ export function clearFilters(){
 	}  
 }
 
+/**
+ * Function used for ordering the data
+ * @param descending the first market id
+ * @returns dispatches asc or desc to the reducer 
+ */
 export function sortData(descending){
     return dispatch => {
         dispatch({
