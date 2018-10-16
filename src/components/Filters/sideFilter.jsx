@@ -23,7 +23,7 @@ class SideFilter extends React.PureComponent {
     });
   };
 
-  clearFilters(filterValue){
+  clearFilters(){
     this.props.dispatch(clearFilters())
 
     this.setState({
@@ -32,7 +32,7 @@ class SideFilter extends React.PureComponent {
   };
 
   render() {
-    const { data, filters, filteredData } = this.props;
+    const { filters, filteredData } = this.props;
     return (
       <div>
         {

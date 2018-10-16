@@ -12,18 +12,4 @@ class Header extends React.PureComponent {
   }
 }
 
-function mapStateToProps (state) {
-  const { HotelReducer } = state;
-
-  const {
-      data
-  } = HotelReducer || {
-      data: null
-  }
-
-  return {
-      data
-  };
-}
-
 export default Header;

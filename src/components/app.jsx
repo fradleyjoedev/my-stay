@@ -13,7 +13,7 @@ class App extends React.PureComponent {
     super(props);
   }
 
-  componentWillMount(){
+  componentDidMount(){
 		this.props.dispatch(storeHotelData())
 	}
 
