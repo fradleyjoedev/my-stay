@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { storeHotelData } from '../actions/hotelActions';
 import { connect } from 'react-redux';
 import Header from './header/header';
@@ -8,7 +8,7 @@ import TopFilter from './filters/topFilter';
 
 import './styles/styles.scss'
 
-class App extends Component {
+class App extends React.PureComponent {
   constructor (props) {
     super(props);
   }

@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import AnimateOnChange from 'react-animate-on-change'
 import Loading from '../loading/loading';
+import {orderData} from '../../helpers/hotelHelper'
 
 import './hotelList.scss'
 
-class HotelList extends Component {
+class HotelList extends React.PureComponent {
   constructor (props) {
     super(props);
   }
@@ -21,24 +22,13 @@ class HotelList extends Component {
   render() {
     const { data, filteredData, sorting } = this.props;
 
-    let hoteldata = filteredData != null ? filteredData : data;
-
-    switch(sorting){
-      case "asc":
-          hoteldata = hoteldata.sort((a, b) => a.starRating - b.starRating)
-          break;
-      case "desc":
-          hoteldata = hoteldata.sort((a, b) => b.starRating - a.starRating)
-          break;
-      default:
-          break;
-    }
+    let hotelData = filteredData != null ? orderData(sorting, filteredData) : orderData(sorting, data);
 
     return (
       <div className="hotel__list">
         {
-          hoteldata != null ?
-            hoteldata.map((hotel, i) =>
+          hotelData != null ?
+            hotelData.map((hotel, i) =>
               <AnimateOnChange 
               key={i}
               baseClassName="hotel__list-item" 

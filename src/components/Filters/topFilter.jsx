@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { sortData } from '../../actions/hotelActions';
 
 import './filter.scss'
 
-class TopFilter extends Component {
+class TopFilter extends React.PureComponent {
   constructor (props) {
     super(props);
 

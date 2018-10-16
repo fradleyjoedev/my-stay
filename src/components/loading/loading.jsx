@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './loading.scss'
 
-class Loading extends Component {
+class Loading extends React.PureComponent {
   render() {
     return (
       <div className="loading">
